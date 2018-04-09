@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title jQuery UI Menu - Default functionality
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+    link(rel='stylesheet', href='/resources/demos/style.css')
+    script(src='https://code.jquery.com/jquery-1.12.4.js')
+    script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+    script.
+      $( function() {
+      $( "#menu" ).menu();
+      } );
+    style.
+      .ui-menu { width: 150px; }
+
+
+    link(rel='stylesheet', href='/css/index.css') 
+    title World Wide Web
+
+  body
+    .header
+      //-
+        h1.page-title World Wide Web
+
+    ul.nav
+      li: a(href='/') Home
+      li: a(href='/jqueryuipage') JQuery
+      li: a(href='#about') About
+      li: a(href='#contact') Contact
+    
+    .main-content
+      block content
+
+    .footer
+      p Copyright © 2020 Futurecorpz. Futurecorpz ® is a Registered Trademark of Futures (un)Ltd. in the Mars Community and other solar systems.
